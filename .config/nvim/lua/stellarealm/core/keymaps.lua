@@ -6,12 +6,12 @@ local map = vim.keymap.set
 vim.g.mapleader = " "
 
 -- Autopair
-map("i", "(", "()<left>")
-map("i", "{", "{}<left>")
-map("i", "[", "[]<left>")
-map("i", "'", "''<left>")
-map("i", "`", "``<left>")
-map("i", '"', '""<left>')
+-- map("i", "(", "()<left>")
+-- map("i", "{", "{}<left><CR><CR><up><tab>")
+-- map("i", "[", "[]<left>")
+-- map("i", "'", "''<left>")
+-- map("i", "`", "``<left>")
+-- map("i", '"', '""<left>')
 
 -- Better Indenting
 
