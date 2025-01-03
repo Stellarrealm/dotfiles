@@ -39,7 +39,7 @@ return {
             { name = "path" }
           },
           {
-            { name = "buffer", keyword_length = 3 },
+            { name = "buffer", keyword_length = 2 },
           }),
 
         mapping = {

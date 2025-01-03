@@ -22,8 +22,8 @@ map("v", ">", ">gv")
 -- Better Cursor Positioning
 
 -- seamlessly treat visual lines as actual lines when moving around.
-map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true})
-map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true})
+map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 
 -- keeps the cursor in the center when doing C-d/C-u or n/N
 map("n", "<C-d>", "<C-d>zz")
@@ -52,7 +52,7 @@ map("v", "<A-k>", ":m '<-2<cr>gv=gv")
 map("n", "<esc>", "<cmd>nohl<cr>")
 
 -- exit insert mode using qq
-map("i", "qq", "<Esc>")
+-- map("i", "qq", "<Esc>")
 
 -- no yank when doing x
 map("n", "x", '"_x')

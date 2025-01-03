@@ -1,4 +1,4 @@
-require("stellarealm.core.statusline")
+-- require("stellarealm.core.statusline")
 
 local set = vim.opt
 
@@ -63,7 +63,8 @@ set.splitbelow = true
 set.splitright = true
 
 -- custom statusline
-set.statusline = "%!v:lua.Statusline()"
+-- set.statusline = "%!v:lua.Statusline()"
+vim.opt.statusline = "[%{toupper(mode())}][%{toupper(&fileencoding != '' ? &fileencoding : &encoding)}]%=%t%=[%l,%c]"
 
 -- disable swapfile for the buffer
 set.swapfile = false
@@ -92,10 +93,10 @@ vim.g.netrw_keepdir = 0
 vim.g.netrw_winsize = 20
 
 -- tree style
-vim.g.netrw_liststyle = 3
+-- vim.g.netrw_liststyle = 3
 
 -- enable recursive copy of directories
 vim.g.netrw_localcopydircmd = "cp -r"
 
 -- hide dotfiles on load
-vim.g.netrw_list_hide = "\\(^\\|\\s\\s\\)\\zs\\.\\S\\+"
+-- vim.g.netrw_list_hide = "\\(^\\|\\s\\s\\)\\zs\\.\\S\\+"
